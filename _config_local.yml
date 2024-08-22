@@ -1,8 +1,9 @@
-title: Jasmine
-description: a analytics programming language jasmine spec
-remote_theme: just-the-docs/just-the-docs@v0.9.0
+# Local Setting
+baseurl: ""
+url: ""
 
-url: https://jshinonome.github.io
+# Theme
+theme: "just-the-docs"
 logo: "/assets/images/logo.png"
 color_scheme: dark
 search_enabled: true

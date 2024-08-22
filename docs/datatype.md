@@ -1,0 +1,100 @@
+---
+title: Data Types
+nav_order: 2
+---
+
+<!-- prettier-ignore-start -->
+
+# Data Types
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+<!-- prettier-ignore-end -->
+
+---
+
+## Scalar
+
+| name      | length | example                 |
+| --------- | ------ | ----------------------- |
+| boolean   | 1      | 1b                      |
+| u8        | 8      | 0x01                    |
+| i16       | 16     | 1h                      |
+| i32       | 32     | 1i                      |
+| i64       | 64     | 1                       |
+| date      | 32     | 2024.08.22              |
+| time      | 64     | 21:45:00.000            |
+| datetime  | 64     | 2024.08.22T21:45:00.000 |
+| timestamp | 64     | 2024.08.22D21:46:00.000 |
+| duration  | 64     | 0D21:47:00.000          |
+| f32       | 32     | 1e                      |
+| f64       | f64    | 1f                      |
+| string    | \*     | "s"                     |
+| symbol    | \*     | `s                      |
+| null      | 0      | 0n                      |
+
+There is no null for each scalar type, null only exists in series type
+
+## Series
+
+Same as [Polars Data Types](https://docs.pola.rs/user-guide/concepts/data-types/overview/)
+
+Mostly used Series types are:
+
+| Group    | Type           | example                                 | Details                                                                                                              |
+| -------- | -------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Numeric  | `UInt8`        | 0x010203                                | 8-bit unsigned integer.                                                                                              |
+|          | `Int16`        | 1 2 3h                                  | 16-bit signed integer.                                                                                               |
+|          | `Int32`        | 1 2 3i                                  | 32-bit signed integer.                                                                                               |
+|          | `Int64`        | 1 2 3                                   | 64-bit signed integer.                                                                                               |
+|          | `Float32`      | 1 2 3e                                  | 32-bit floating point.                                                                                               |
+|          | `Float64`      | 1 2 3f                                  | 64-bit floating point.                                                                                               |
+| Nested   | `List`         | During Query                            | A list contains a child array containing list values and an offset array.                                            |
+|          | `Array`        | During Query                            | A fixed-size multidimensional array.                                                                                 |
+| Temporal | `Date`         | 2024.08.22 2024.08.23                   | Date representation, internally represented as days since UNIX epoch encoded by a 32-bit signed integer.             |
+|          | `Datetime(ms)` | 2024.08.22T00:00:00 2024.08.23T00:00:00 | Datetime representation, internally represented as milliseconds since UNIX epoch encoded by a 64-bit signed integer. |
+|          | `Datetime(ns)` | 2024.08.22D00:00:00 2024.08.23D00:00:00 | Datetime representation, internally represented as nanoseconds since UNIX epoch encoded by a 64-bit signed integer.  |
+|          | `Duration(ns)` | 0D22:48:00 0D22:49:00                   | A timedelta type, internally represented as nanoseconds. Created when subtracting `Date/Datetime`.                   |
+|          | `Time`         | 22:49:00 22:50:00                       | Time representation, internally represented as nanoseconds since midnight by a 64-bit signed integer.                |
+| Other    | `Boolean`      | 01b                                     | Boolean type effectively bit packed.                                                                                 |
+|          | `String`       | ("a";"ab")                              | String data.                                                                                                         |
+|          | `Categorical`  | \`a\`b                                  | A categorical encoding of a set of strings, correspondent to scalar type symbol                                      |
+
+## Matrix
+
+2d-array 64 bit float type
+
+create a 3\*3 matrix
+
+```
+3 3#range 9
+```
+
+## Dictionary
+
+A string/symbol keyed dictionary
+
+example 1
+
+```
+`a`b`c!1 2 3
+```
+
+example 2
+
+```
+{a:1;b:2;c:3}
+```
+
+## DataFrame
+
+DataFrame is a data structure constructed with rows and columns. It is a collection of series.
+
+```
+([]a: 1 2; b: 2024.08.22 2024.08.23)
+```

@@ -66,3 +66,8 @@ exclude:
   - Dockerfile
   # theme test code
   - fixtures/
+
+callouts:
+  warning:
+    title: Warning
+    color: red

@@ -1,6 +1,6 @@
 ---
 title: Data Types
-nav_order: 2
+nav_order: 3
 ---
 
 <!-- prettier-ignore-start -->
@@ -27,10 +27,10 @@ nav_order: 2
 | i16       | 16     | 1h                      |
 | i32       | 32     | 1i                      |
 | i64       | 64     | 1                       |
-| date      | 32     | 2024.08.22              |
+| date      | 32     | 2026.08.22              |
 | time      | 64     | 21:45:00.000            |
-| datetime  | 64     | 2024.08.22T21:45:00.000 |
-| timestamp | 64     | 2024.08.22D21:46:00.000 |
+| datetime  | 64     | 2026.08.22T21:45:00.000 |
+| timestamp | 64     | 2026.08.22D21:46:00.000 |
 | duration  | 64     | 0D21:47:00.000          |
 | f32       | 32     | 1e                      |
 | f64       | 64     | 1f                      |
@@ -55,9 +55,9 @@ Mostly used Series types are:
 | Numeric  | `Int64`        | 1 2 3                                   | 64-bit signed integer.                                                                                               |
 | Numeric  | `Float32`      | 1 2 3e                                  | 32-bit floating point.                                                                                               |
 | Numeric  | `Float64`      | 1 2 3f                                  | 64-bit floating point.                                                                                               |
-| Temporal | `Date`         | 2024.08.22 2024.08.23                   | Date representation, internally represented as days since UNIX epoch encoded by a 32-bit signed integer.             |
-| Temporal | `Datetime(ms)` | 2024.08.22T00:00:00 2024.08.23T00:00:00 | Datetime representation, internally represented as milliseconds since UNIX epoch encoded by a 64-bit signed integer. |
-| Temporal | `Datetime(ns)` | 2024.08.22D00:00:00 2024.08.23D00:00:00 | Datetime representation, internally represented as nanoseconds since UNIX epoch encoded by a 64-bit signed integer.  |
+| Temporal | `Date`         | 2026.08.22 2026.08.23                   | Date representation, internally represented as days since UNIX epoch encoded by a 32-bit signed integer.             |
+| Temporal | `Datetime(ms)` | 2026.08.22T00:00:00 2026.08.23T00:00:00 | Datetime representation, internally represented as milliseconds since UNIX epoch encoded by a 64-bit signed integer. |
+| Temporal | `Datetime(ns)` | 2026.08.22D00:00:00 2026.08.23D00:00:00 | Datetime representation, internally represented as nanoseconds since UNIX epoch encoded by a 64-bit signed integer.  |
 | Temporal | `Duration(ns)` | 0D22:48:00 0D22:49:00                   | A timedelta type, internally represented as nanoseconds. Created when subtracting `Date/Datetime`.                   |
 | Temporal | `Time`         | 22:49:00 22:50:00                       | Time representation, internally represented as nanoseconds since midnight by a 64-bit signed integer.                |
 | String   | `String`       | ("a";"ab")                              | String data.                                                                                                         |
@@ -96,5 +96,5 @@ example 2
 DataFrame is a data structure constructed with rows and columns. It is a collection of series.
 
 ```
-([]a: 1 2; b: 2024.08.22 2024.08.23)
+([]a: 1 2; b: 2026.08.22 2026.08.23)
 ```

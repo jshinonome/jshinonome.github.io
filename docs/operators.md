@@ -1,6 +1,6 @@
 ---
 title: Operators
-nav_order: 3
+nav_order: 6
 ---
 
 <!-- prettier-ignore-start -->
@@ -15,6 +15,8 @@ nav_order: 3
 {:toc}
 
 <!-- prettier-ignore-end -->
+
+---
 
 ## Assignment Operators
 
@@ -66,9 +68,9 @@ may change divide `%` to `/` and only use `over` for over operator. may change `
 | dict (`!`)   | create a dictionary                                             | `` `a`b`c!1 2 3 `` |
 | append (`,`) | append the right operand to left operand                        | `list1 , var1`     |
 | take (`#`)   | take a sub list from the right operand                          | `3 # list1`        |
-| raise (`'`)  | raise a string as exception                                     | `'"error message"` |
-| remove (`_`) | remote items from the right operand                             | `3 _ list1`        |
+| throw (`'`)  | throw a string as exception                                     | `'"error message"` |
+| remove (`_`) | remote items fr om the right operand                            | `3 _ list1`        |
 | fill (`^`)   | fill nulls of the right operand with a value                    | `var1 ^ list1`     |
 
 {: .warning }
-may change divide `'` to `raise`. may change `.` to `apply`. may change `,` to `append`
+may change divide `'` to `throw`. may change `.` to `apply`. may change `,` to `append`

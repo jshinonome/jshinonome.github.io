@@ -55,7 +55,7 @@ Use the `'` statement to throw an exception.
 ```
 
 {: .warning }
-may change `'` statements to use keyword `throw`
+may change `'` to use keyword `throw`
 
 ### try...catch
 

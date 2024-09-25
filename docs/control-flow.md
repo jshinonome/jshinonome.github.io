@@ -1,6 +1,6 @@
 ---
 title: Control Flow and Error Handling
-nav_order: 4
+nav_order: 5
 ---
 
 <!-- prettier-ignore-start -->
@@ -59,7 +59,7 @@ may change `'` to use keyword `throw`
 
 ### try...catch
 
-There is a `err` variable stores error message in the catch block
+There is an extra `err` variable stores error message in the catch block
 
 ```
 try {

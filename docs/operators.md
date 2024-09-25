@@ -48,7 +48,7 @@ The assignment is a expression that returns left operand value
 | divide (`%`)   | left operand divide right operand   | `var1 % var2` |
 
 {: .warning }
-may change divide `%` to `/` and only use `over` for over operator. may change `%` to `mod`
+may change divide `%` to `/` and only use `over` for over operator. may change `mod` to `%`
 
 ## Logical operators
 

@@ -73,4 +73,4 @@ may change divide `%` to `/` and only use `over` for over operator. may change `
 | fill (`^`)   | fill nulls of the right operand with a value                    | `var1 ^ list1`     |
 
 {: .warning }
-may change divide `'` to `throw`. may change `.` to `apply`. may change `,` to `append`
+may change divide `'` to `throw`. may change `.` to `apply`. may change `_` to `remove`. may change `,` to `_`.

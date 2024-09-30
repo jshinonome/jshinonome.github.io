@@ -5,4 +5,4 @@ gem "jekyll", "~> 4.3.4" # installed by `gem jekyll`
 
 gem "just-the-docs", "0.10.0" # pinned to the current release
 # gem "just-the-docs"        # always download the latest release
-gem "sass-embedded", "1.78.0" # remove once darken depricated issue is resolved
+gem "sass-embedded", "1.79.4" # remove once darken depricated issue is resolved

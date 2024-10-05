@@ -26,7 +26,7 @@ nav_order: 6
 
 The assignment is a expression that returns left operand value
 
-## Comparison OPerators
+## Comparison Operators
 
 | operator                     | description                                                                    | example        |
 | ---------------------------- | ------------------------------------------------------------------------------ | -------------- |
@@ -38,7 +38,7 @@ The assignment is a expression that returns left operand value
 | less than (`<`)              | Returns `true` if the left operand is less than the right operand.             | `var1 < var2`  |
 | greater than (`>`)           | Returns `true` if the left operand is greater than the right operand.          | `var1 > var2`  |
 
-## Arithmetic operators
+## Arithmetic Operators
 
 | operator       | description                         | example       |
 | -------------- | ----------------------------------- | ------------- |
@@ -50,7 +50,7 @@ The assignment is a expression that returns left operand value
 {: .warning }
 may change divide `%` to `/` and only use `over` for over operator. may change `mod` to `%`
 
-## Logical operators
+## Logical Operators
 
 | operator                     | description                        | example                       |
 | ---------------------------- | ---------------------------------- | ----------------------------- |
